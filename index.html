@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"></head>
+    <script src="jquery.passwordstrength.js"></script>
+    <body>
+    <form action="">
+        <img src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="">
+        <div class="input-box">
+            <span><i class="fa-light fa-user"></i></span>
+            <input type="text" placeholder="User Name" required>
+        </div>
+
+        <div class="input-box">
+            <span><i class="fa-light fa-envelope"></i></span>
+            <input type="text" placeholder="Email ID" required>
+        </div>
+
+        <div class="input-box">
+            <span><i class="fa-light fa-key"></i></span>
+            <input type="text" placeholder="Password" required>
+        </div>
+        <button type="submit"><i class="fa-light fa-sign-in"></i>Register</button>
+    </form>
+    <form action="#" method="get">
+        <input type="password" id="password" />
+    </form>
+    
+    <script type="text/javascript">
+        $(function() {
+            $("#password").passwordStrength();
+        });
+    </script>
+
+
+</body>
+</html>
